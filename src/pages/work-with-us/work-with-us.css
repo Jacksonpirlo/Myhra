@@ -1,0 +1,121 @@
+@font-face {
+  font-family: minerva-modern;
+  src: url(https://use.typekit.net/af/2d15e1/00000000000000003b9afd25/27/l?subset_id=2&fvd=n4&v=3);
+}
+:root {
+  --primary-color: rgb(25, 27, 32);
+  --secondary-color: white;
+  --third-color: #313131;
+  --fourth-color: #e7d9cb;
+}
+
+body {
+  font-family: minerva-modern;
+  font-size: clamp(0.7rem, 3vw, 1.4rem);
+  margin: 0;
+}
+main {
+  background-color: var(--fourth-color);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  color: var(--secondary-color);
+  height: 50vh;
+  background-image: url("../../assets/img/backgroundHeader.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a+a, header li+li{
+    margin-left: 1rem;
+}
+
+.header-text,
+header nav {
+    text-align: center;
+  padding: 2rem 0;
+}
+.nav-center {
+  text-align: center;
+}
+.nav-center ul li {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+.link-button {
+  padding: 1rem 0.6rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.grid-container {
+  padding: clamp(2rem, 5vw, 5rem);
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+.grid-item {
+  padding: clamp(1rem, 5vw, 3rem);
+}
+
+.img-container img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.no-margin > * {
+  margin: 0;
+}
+
+.appointment-container {
+  margin: 4rem 0;
+  font-size: 1rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  background-color: var(--secondary-color);
+}
+
+.appointment-title-choose::before {
+  font-family: "Courier New", Courier, monospace;
+  content: "1";
+  background-color: var(--third-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 1rem;
+}
+.appointment-box {
+  color: var(--third-color);
+}
+
+.service-content-info {
+  display: flex;
+  justify-content: space-between;
+}
