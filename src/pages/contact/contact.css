@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: freight pro;
     color: var(--color-text);
+    font-size: large;
 }
 body{
     background-color:#c2c8cc;
@@ -34,7 +35,7 @@ header {
 }
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.7rem;
     cursor: pointer;
     font-weight:normal;
     font-family:'Minerva Modern';
@@ -49,7 +50,6 @@ nav {
 nav a {
     text-decoration: none;
     margin: 0 15px;
-    font-size: 14px;
 }
 nav a:hover {
     text-decoration: underline;
@@ -105,6 +105,8 @@ h2{
 .style-main{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 15%;
+    padding: 7% 15%;
 }
 
 .form-content{
@@ -138,4 +140,25 @@ form{
 
 textarea{
     resize: vertical;
+}
+.contact-content{
+    text-align: start;
+    width: 80%;
+}
+
+.contact-content p{
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0.07em;
+    text-transform: none;
+    line-height: 1.8rem;
+}
+.contact-content h2{
+    font-size: 40px;
+    margin-bottom: 2.4rem;
+}
+
+samp{
+    color: gray;
+    font-weight: lighter;
 }
