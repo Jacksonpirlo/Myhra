@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="work-with-us.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../../../style.css">
     <title>Work with us</title>
   </head>
   <body>
@@ -26,39 +27,45 @@
           </ul>
         </div>
 
-        <div>
+        <div class="nav-right">
           <a href="">Log in</a>
-          <a href="" class="link-button">work with us</a>
+          <a href="" class="link-button">trabaja conmigo</a>
         </div>
       </nav>
 
       <div class="header-text">
-        <h1>Start Your travel to welfare</h1>
+        <h1>empieza tu viaje HACIA EL BIENESTAR.</h1>
       </div>
     </header>
     <main>
-      <section class="grid-container">
+
+
+      <section class="grid-container"> 
         <div class="grid-item">
           <article class="consult-article">
             <h1>RESERVA TU CONSULTA GRATUITA.</h1>
             <ul>
-              <li>Evaluación integral del bienestar</li>
-              <li>
+              <li><p>Evaluación integral del bienestar</p></li>
+              <li><p>
                 Plan personalizado de nutrición, mindfulness y ejercicios para
                 ayudarte a alcanzar tus metas
+                </p>
               </li>
-              <li>Guía y asistencia ilimitadas por correo electrónico</li>
-              <li>
+              <li><p>Guía y asistencia ilimitadas por correo electrónico</p></li>
+              <li> <p>
                 Herramientas, consejos y trucos útiles para superar tus propios
-                obstáculos
+                obstáculos</p>
               </li>
             </ul>
           </article>
+
+
           <article class="consult-article">
             <div class="appointment-container">
-              <span>¿You're already an client? <a href="">Log in</a></span>
+              <span>¿Ya eres cliente?  <a href="">Iniciar Sesión</a></span>
 
-              <h2 class="appointment-title-choose">Elige la cita</h2>
+              <h3 class="appointment-title-choose">Elige la cita</h3>
+              <!-- service 1 -->
               <div class="appointment-box">
                 <div class="service-content-info">
                   <div class="no-margin">
@@ -66,13 +73,14 @@
                     <p>1 Hora</p>
                   </div>
                   <div>
-                    <button>Haz una reserva</button>
+                    <button class="btn">Haz una reserva</button>
                   </div>
                 </div>
-                <div class="service-content-des">
+             
                   <p>Descripción del servicio</p>
                 </div>
-              </div>
+              
+              <!-- sevice 2 -->
               <div class="appointment-box">
                 <div class="service-content-info">
                   <div class="no-margin">
@@ -80,7 +88,7 @@
                     <p>1 Hora</p>
                   </div>
                   <div>
-                    <button>Haz una reserva</button>
+                    <button class="btn">Haz una reserva</button>
                   </div>
                 </div>
                 <div class="service-content-des">
@@ -97,5 +105,13 @@
         </div>
       </section>
     </main>
+    <footer>
+        <h2>NO TE PIERDAS NINGUNA RECETA.</h2>
+        <form>
+          <input type="email" placeholder="Correo electrónico">
+            <button type="submit" class="btn">Suscribirse</button>
+        </form>
+
+    </footer>
   </body>
 </html>
